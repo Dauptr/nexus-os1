@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Z.ai Code Scaffold - AI-Powered Development",
-  description: "Modern Next.js scaffold optimized for AI-powered development",
+  title: "NEXUS OS",
+  description: "AI-Powered Development Scaffold",
 };
 
 export default function RootLayout({
