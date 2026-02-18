@@ -6,7 +6,6 @@ export default function Home() {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    // Simulate the boot sequence loading
     const interval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
@@ -23,10 +22,8 @@ export default function Home() {
   return (
     <main className="fixed inset-0 flex flex-col items-center justify-center z-[9999]" style={{ background: "#000001" }}>
       
-      {/* Background Canvas (Placeholder) */}
       <canvas className="fixed inset-0 z-0 pointer-events-none" style={{ background: "#000001" }} />
 
-      {/* Grid Overlay */}
       <div 
         className="fixed inset-0 pointer-events-none z-10 opacity-10" 
         style={{ 
@@ -35,7 +32,6 @@ export default function Home() {
         }} 
       />
 
-      {/* Scan Line Effect */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-20">
         <div 
           className="absolute w-full h-[2px] opacity-20 animate-scan-line" 
@@ -43,7 +39,6 @@ export default function Home() {
         />
       </div>
 
-      {/* Main Title */}
       <div className="relative mb-12 z-30">
         <h1 
           className="text-6xl md:text-8xl font-bold tracking-wider transition-all duration-100"
@@ -61,12 +56,10 @@ export default function Home() {
           </span>
         </div>
         
-        {/* Decorative Borders */}
         <div className="absolute -inset-10 border rounded-lg pointer-events-none animate-pulse" style={{ borderColor: "rgba(0, 240, 255, 0.3)" }} />
         <div className="absolute -inset-20 border rounded-lg pointer-events-none" style={{ borderColor: "rgba(0, 240, 255, 0.15)" }} />
       </div>
 
-      {/* Boot Log Box */}
       <div className="w-80 md:w-96 space-y-4 z-30">
         <div 
           className="h-36 overflow-hidden rounded-lg p-3 font-mono text-xs backdrop-blur-sm"
@@ -84,7 +77,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Progress Bar */}
         <div className="space-y-2">
           <div 
             className="h-2 rounded-full overflow-hidden"
